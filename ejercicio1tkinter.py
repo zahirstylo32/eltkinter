@@ -4,7 +4,7 @@ from tkinter import messagebox
 # Crear ventana principal
 ventana = tk.Tk()
 ventana.title("Calculadora")
-ventana.geometry("300x400")
+ventana.geometry("300x600")
 
 # Variable para guardar lo que se escribe
 entrada = tk.StringVar()
@@ -28,7 +28,7 @@ def calcular():
         messagebox.showerror("Error", "Entrada inválida")
 
 # Pantalla de la calculadora
-pantalla = tk.Entry(ventana, textvariable=entrada, font=("Arial", 20), bd=10, relief="ridge", justify="right")
+pantalla = tk.Entry(ventana, textvariable=entrada, font=("Arial", 20), bd=5, relief="flat", justify="right")
 pantalla.pack(fill="both", ipadx=8, ipady=15, padx=10, pady=10)
 
 # Frame para los botones
